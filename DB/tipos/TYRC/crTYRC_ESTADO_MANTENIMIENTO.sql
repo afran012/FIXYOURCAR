@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_ESTADO_MANTENIMIENTO AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_ESTADO_MANTENIMIENTO AS OBJECT
 (
     ID_DETALLE_PEDIDO NUMBER(15),
 	ID_PEDIDO NUMBER(15),

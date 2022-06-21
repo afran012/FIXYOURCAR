@@ -10,6 +10,8 @@
 
 PROMPT APLICA9999.sql
 
+@"\Users\stevenfranco\Documents\EntrvistaSodimac\Tablas\CARCENTER\script.sql";
+
 ALTER SESSION SET CURRENT_SCHEMA=CARCENTERADMIN;
 /
 

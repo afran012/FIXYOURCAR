@@ -6,15 +6,18 @@ IdGestión:   Ticket-2132123
 @copyright: NombreDeLaEmpresa
 ************************************************************************************/
 
-create table CARCENTERADMIN.MANTENIMIENTO
+create table CARCENTERADMIN.MANO_DE_OBRA 
 (
-ID_MANTENIMIENTO                NUMBER(4)   ,
-ID_FACTURA                      NUMBER(15)  ,
-ID_ESTADO_MANTENIMIENTO         NUMBER(4)   ,
-ID_VEHICULO                     NUMBER(4)   ,
-ID_MECANICO                     NUMBER(15)  ,
-ID_MANO_DE_OBRA                 NUMBER(20)  ,
-DESCRIPCION                     VARCHAR2(20),
+ID_MANO_DE_OBRA                 NUMBER(15)  ,
+SERVICIO                        VARCHAR2(40)  ,
+DESCRIPCION                     VARCHAR2(6)  ,
+PRECIO_MAXIMO                   NUMBER(15),
+PRECIO_MINIMO                   NUMBER(15),
+PRECIO_TOTAL                    NUMBER(15),
 ULTIMA_ACTUALIZACION            TIMESTAMP   
-);
+)
+
+
+/
+COMMENT ON TABLE CARCENTERADMIN.MECANICO IS 'MECANICOS RESGISTRADAS' 
 /

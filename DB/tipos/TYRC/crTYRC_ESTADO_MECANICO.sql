@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_ESTADO_MECANICO AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_ESTADO_MECANICO AS OBJECT
 (
 ID_ESTADO_MECANICO              NUMBER(4),
 DESCRIPCION                     VARCHAR2(20)

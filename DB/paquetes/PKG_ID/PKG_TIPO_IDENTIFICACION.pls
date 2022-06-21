@@ -1,56 +1,56 @@
 create or replace PACKAGE PKG_TIPO_IDENTIFICACION IS
 /************************************************************************************
-Descripción: Objeto de encargado de gestionar las transacciones dml sobre la entidad TIPO_IDENTIFICACION
+Descripciï¿½n: Objeto de encargado de gestionar las transacciones dml sobre la entidad TIPO_IDENTIFICACION
 Autor:       Nombre del desarrollador y usuario
 Fecha:       01-01-2022
-IdGestión:   Ticket-2132123
+IdGestiï¿½n:   Ticket-2132123
 @copyright: NombreDeLaEmpresa
 ------------------------------------------------------------------------------------
 Historial de modificaciones=>
-Fecha         Orden          Persona                 Acción        
+Fecha         Orden          Persona                 Acciï¿½n        
 ------------------------------------------------------------------------------------
-01-01-2022    Ticketxxx        NombreDevModifica       Creación 
+01-01-2022    Ticketxxx        NombreDevModifica       Creaciï¿½n 
 
 ************************************************************************************/
 
-    /* Declaración de tipo de datos publicos */
+    /* Declaraciï¿½n de tipo de datos publicos */
 
     subtype tyrcTIPO_IDENTIFICACION is  TIPO_IDENTIFICACION%rowtype ;
 
     type tytbTIPO_IDENTIFICACION is table of tyrcTIPO_IDENTIFICACION index by binary_integer;
 
-    /* Declaración de variables publicas */
+    /* Declaraciï¿½n de variables publicas */
 
     -- tbTIPO_IDENTIFICACION tytbTIPO_IDENTIFICACION;
 
-    /* Declaración de  metodos y funciones publicas */
+    /* Declaraciï¿½n de  metodos y funciones publicas */
 
     /************************************************************************************
-    Descripción: Objeto usado para ... 
+    Descripciï¿½n: Objeto usado para ... 
     Autor:       Nombre del desarrollador y usuario
     Fecha:       01-01-2022
-    IdGestión:   Ticket-2132123
+    IdGestiï¿½n:   Ticket-2132123
     @copyright: NombreDeLaEmpresa
     ------------------------------------------------------------------------------------
     Historial de modificaciones=>
-    Fecha         Orden          Persona                 Acción        
+    Fecha         Orden          Persona                 Acciï¿½n        
     ------------------------------------------------------------------------------------
-    01-01-2022    Ticketxxx        NombreDevModifica       Creación  
+    01-01-2022    Ticketxxx        NombreDevModifica       Creaciï¿½n  
     ************************************************************************************/
 
     procedure insTIPO_IDENTIFICACION (iorc in out nocopy tyrcTIPO_IDENTIFICACION);
 
     /************************************************************************************
-    Descripción: Objeto usado para ... 
+    Descripciï¿½n: Objeto usado para ... 
     Autor:       Nombre del desarrollador y usuario
     Fecha:       01-01-2022
-    IdGestión:   Ticket-2132123
+    IdGestiï¿½n:   Ticket-2132123
     @copyright: NombreDeLaEmpresa
     ------------------------------------------------------------------------------------
     Historial de modificaciones=>
-    Fecha         Orden          Persona                 Acción        
+    Fecha         Orden          Persona                 Acciï¿½n        
     ------------------------------------------------------------------------------------
-    01-01-2022    Ticketxxx        NombreDevModifica       Creación      
+    01-01-2022    Ticketxxx        NombreDevModifica       Creaciï¿½n      
     ************************************************************************************/
 
     procedure getTIPO_IDENTIFICACION (id in number, orc out nocopy tyrcTIPO_IDENTIFICACION);

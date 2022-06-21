@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_MANTENIMIENTO AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_MANTENIMIENTO AS OBJECT
 (
 ID_MANTENIMIENTO                NUMBER(4)   ,
 ID_FACTURA                      NUMBER(15)  ,

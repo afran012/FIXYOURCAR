@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_REPUESTO AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_REPUESTO AS OBJECT
 (
 ID_REPUESTO                     NUMBER(15),    
 DESCRIPCION                     VARCHAR2(200),

@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_FACTURA AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_FACTURA AS OBJECT
 (
 ID_FACTURA                      NUMBER(15),
 SUBTOTAL                        NUMBER(15),

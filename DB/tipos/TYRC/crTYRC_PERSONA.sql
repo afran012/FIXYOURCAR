@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_PERSONA AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_PERSONA AS OBJECT
 (
 ID_PERSONA                      NUMBER(15)  ,
 ID_TIPO_IDENTIFICACION          NUMBER(2)   ,

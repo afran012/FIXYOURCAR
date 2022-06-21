@@ -6,7 +6,7 @@ IdGesti�n:   Ticket-2132123
 @copyright:  NombreDeLaEmpresa
 ************************************************************************************/
 
-CREATE TYPE TYRC_VEHICULO AS OBJECT
+CREATE TYPE CARCENTERADMIN.TYRC_VEHICULO AS OBJECT
 (
 ID_VEHICULO                     NUMBER(4)   ,
 ID_PERSONA                      NUMBER(15)  ,
