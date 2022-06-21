@@ -6,5 +6,9 @@ IdGestión:   Ticket-2132123
 @copyright: NombreDeLaEmpresa
 ************************************************************************************/
 
-ALTER TABLE CARCENTERADMIN.INVENTARIO ADD CONSTRAINT FK_INVENTARIO_ID_REPUESTO FOREIGN KEY (ID_REPUESTO)  REFERENCES CARCENTERADMIN.REPUESTO(ID_REPUESTO);
+create table CARCENTERADMIN.ESTADO_MECANICO 
+(
+ID_ESTADO_MECANICO              NUMBER(4) GENERATED ALWAYS AS IDENTITY,
+DESCRIPCION                     VARCHAR2(20)
+);
 /
