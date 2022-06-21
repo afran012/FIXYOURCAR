@@ -4,10 +4,17 @@
  */
 package com.carcenter.api.DTO;
 
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class InventarioDTO {
-    
+
+    private Long id;
+    private Long idRepuesto;
+    private Long cantidad;
+
 }

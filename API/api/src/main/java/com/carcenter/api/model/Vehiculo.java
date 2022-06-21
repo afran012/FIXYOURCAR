@@ -18,17 +18,19 @@ import lombok.Data;
  */
 
 @Entity
-@Table(name="CIUDAD")
+@Table(name="VEHICULO")
 @Data
 public class Vehiculo {
     
         @Id
-	@Column(name="ID_CIUDAD")
+	@Column(name="ID_VEHICULO")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="NOMBRE_CIUDAD")
-	private String nombre;
-	@Column(name="ID_DEPARTAMENTO")
-	private Long idPais;
+	@Column(name="ID_PERSONA")
+	private Long idPersona;
+	@Column(name="PLACAS")
+	private String placas;
+	@Column(name="MARCA")
+	private String marca;
     
 }

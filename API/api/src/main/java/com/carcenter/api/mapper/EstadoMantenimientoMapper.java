@@ -4,10 +4,21 @@
  */
 package com.carcenter.api.mapper;
 
+import java.util.List;
+import org.mapstruct.Mapper;
+
+import com.carcenter.api.DTO.EstadoMantenimientoDTO;
+import com.carcenter.api.model.EstadoMantenimiento;
+
 /**
  *
  * @author stevenfranco
  */
+@Mapper(componentModel = "spring")
 public interface EstadoMantenimientoMapper {
-    
+
+	public List<EstadoMantenimientoDTO> mappAllEstadoMantenimientosToEstadoMantenimientosDTOs(List<EstadoMantenimiento> estadoMantenimientos);
+
+	public EstadoMantenimientoDTO mapEstadoMantenimientoToDTO(EstadoMantenimiento estadoMantenimiento);
+
 }

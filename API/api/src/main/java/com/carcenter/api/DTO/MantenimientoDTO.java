@@ -4,10 +4,23 @@
  */
 package com.carcenter.api.DTO;
 
+import java.util.Date;
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class MantenimientoDTO {
-    
+
+    private Long id;
+    private Long idFactura;
+    private Long idEstadoMantenimiento;
+    private Long idVehiculo;
+    private Long idVecanico;
+    private Long idManoDeObra;
+    private String descripcion;
+    private Date fecha;
+
 }

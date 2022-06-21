@@ -4,10 +4,17 @@
  */
 package com.carcenter.api.DTO;
 
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class RepuestoDTO {
-    
+    private Long id;
+    private String descripcion;
+    private Long valorArticulo;
+    private Long porcentajeDescuento;
+
 }

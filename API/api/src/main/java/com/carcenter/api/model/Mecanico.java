@@ -18,17 +18,33 @@ import lombok.Data;
  */
 
 @Entity
-@Table(name="CIUDAD")
+@Table(name = "MECANICO")
 @Data
 public class Mecanico {
-    
-    	@Id
-	@Column(name="ID_CIUDAD")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+	@Id
+	@Column(name = "ID_MECANICO")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="NOMBRE_CIUDAD")
-	private String nombre;
-	@Column(name="ID_DEPARTAMENTO")
-	private Long idPais;    
-    
+	@Column(name = "ID_ESTADO_MECANICO")
+	private Long idEstadoMecanico;
+	@Column(name = "ID_TIPO_IDENTIFICACION")
+	private Long idTipoIdentificacion;
+	@Column(name = "IDENTIFICACION")
+	private String identificacion;
+	@Column(name = "PRIMER_NOMBRE")
+	private String primerNombre;
+	@Column(name = "SEGUNDO_NOMBRE")
+	private String segundoNombre;
+	@Column(name = "PRIMER_APELLIDO")
+	private String primerApellido;
+	@Column(name = "SEGUNDO_APELLIDO")
+	private String segundoApellido;
+	@Column(name = "CELULAR")
+	private String celular;
+	@Column(name = "DIRECCIÓN")
+	private String dirección;
+	@Column(name = "CORREO_ELECTRONICO")
+	private String correoElectronico;
+
 }

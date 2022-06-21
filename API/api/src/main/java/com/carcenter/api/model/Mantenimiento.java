@@ -4,6 +4,7 @@
  */
 package com.carcenter.api.model;
 
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,17 +19,27 @@ import lombok.Data;
  */
 
 @Entity
-@Table(name="CIUDAD")
+@Table(name = "MANTENIMIENTO")
 @Data
 public class Mantenimiento {
-    
-        @Id
-	@Column(name="ID_CIUDAD")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+	@Id
+	@Column(name = "ID_MANTENIMIENTO")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="NOMBRE_CIUDAD")
-	private String nombre;
-	@Column(name="ID_DEPARTAMENTO")
-	private Long idPais;
-    
+	@Column(name = "ID_FACTURA")
+	private Long idFactura;
+	@Column(name = "ID_ESTADO_MANTENIMIENTO")
+	private Long idEstadoMantenimiento;
+	@Column(name = "ID_VEHICULO")
+	private Long idVehiculo;
+	@Column(name = "ID_MECANICO")
+	private Long idVecanico;
+	@Column(name = "ID_MANO_DE_OBRA")
+	private Long idManoDeObra;
+	@Column(name = "DESCRIPCION")
+	private String descripcion;
+	@Column(name = "FECHA")
+	private Date fecha;
+
 }

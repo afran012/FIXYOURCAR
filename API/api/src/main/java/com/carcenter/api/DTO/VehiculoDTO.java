@@ -4,10 +4,18 @@
  */
 package com.carcenter.api.DTO;
 
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class VehiculoDTO {
+    
+    private Long id;
+	private Long idPersona;
+	private String placas;
+	private String marca;
     
 }

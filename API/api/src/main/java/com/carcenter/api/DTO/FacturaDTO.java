@@ -4,10 +4,19 @@
  */
 package com.carcenter.api.DTO;
 
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class FacturaDTO {
-    
+
+    private Long id;
+    private Long subtotal;
+    private Long valorImpuestos;
+    private Long valorDescuento;
+    private Long valorTotal;
+
 }

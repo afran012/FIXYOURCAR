@@ -14,6 +14,7 @@ ID_ESTADO_MANTENIMIENTO         NUMBER(4)   ,
 ID_VEHICULO                     NUMBER(4)   ,
 ID_MECANICO                     NUMBER(15)  ,
 ID_MANO_DE_OBRA                 NUMBER(20)  ,
-DESCRIPCION                     VARCHAR2(20)
+DESCRIPCION                     VARCHAR2(20),
+FECHA                           TIMESTAMP 
 );
 /

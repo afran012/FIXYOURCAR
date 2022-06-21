@@ -26,7 +26,7 @@ public class Factura {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(name = "SUBTOTAL")
-	private String subtotal;
+	private Long subtotal;
 	@Column(name = "VALOR_IMPUESTOS")
 	private Long valorImpuestos;
 	@Column(name = "VALOR_DESCUENTO")

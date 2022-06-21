@@ -4,10 +4,20 @@
  */
 package com.carcenter.api.DTO;
 
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class ManoDeObraDTO {
-    
+
+    private Long id;
+    private String servicio;
+    private String descripcion;
+    private Long precioMaximo;
+    private Long precioMinimo;
+    private Long precioTotal;
+
 }

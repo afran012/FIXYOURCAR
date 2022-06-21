@@ -4,10 +4,16 @@
  */
 package com.carcenter.api.DTO;
 
+import lombok.Data;
+
 /**
  *
  * @author stevenfranco
  */
+@Data
 public class TipoIdentificacionDTO {
+
+    private Long id;
+    private String descripcion;
     
 }

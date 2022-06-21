@@ -18,17 +18,17 @@ import lombok.Data;
  */
 
 @Entity
-@Table(name="CIUDAD")
+@Table(name="REPUESTO_MANTENIMIENTO")
 @Data
 public class RepuestoMantenimiento {
     
     	@Id
-	@Column(name="ID_CIUDAD")
+	@Column(name="ID_REPUESTO_MANTENIMIENTO")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="NOMBRE_CIUDAD")
-	private String nombre;
-	@Column(name="ID_DEPARTAMENTO")
-	private Long idPais;
+	@Column(name="ID_REPUESTO")
+	private Long idRepuesto;
+	@Column(name="ID_MANTENIMIENTO")
+	private Long idMantenimiento;
     
 }

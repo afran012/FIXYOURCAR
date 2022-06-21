@@ -18,17 +18,19 @@ import lombok.Data;
  */
 
 @Entity
-@Table(name="CIUDAD")
+@Table(name = "REPUESTO")
 @Data
 public class Repuesto {
-    
-        @Id
-	@Column(name="ID_CIUDAD")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+	@Id
+	@Column(name = "ID_REPUESTO")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="NOMBRE_CIUDAD")
-	private String nombre;
-	@Column(name="ID_DEPARTAMENTO")
-	private Long idPais;
-    
+	@Column(name = "DESCRIPCION")
+	private String descripcion;
+	@Column(name = "VALOR_ARTICULO")
+	private Long valorArticulo;
+	@Column(name = "PORCENTAJE_DESCUENTO")
+	private Long porcentajeDescuento;
+
 }

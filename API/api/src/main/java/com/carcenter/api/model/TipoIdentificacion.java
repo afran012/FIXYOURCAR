@@ -17,17 +17,15 @@ import lombok.Data;
  * @author stevenfranco
  */
 @Entity
-@Table(name="CIUDAD")
+@Table(name="TIPO_IDENTIFICACION")
 @Data
 public class TipoIdentificacion {
     
         @Id
-	@Column(name="ID_CIUDAD")
+	@Column(name="ID_TIPO_IDENTIFICACION")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="NOMBRE_CIUDAD")
-	private String nombre;
-	@Column(name="ID_DEPARTAMENTO")
-	private Long idPais;
+	@Column(name="DESCRIPCION")
+	private String descripcion;
       
 }
