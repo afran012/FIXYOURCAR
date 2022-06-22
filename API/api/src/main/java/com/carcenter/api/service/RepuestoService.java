@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.RepuestoDTO;
 import com.carcenter.api.mapper.RepuestoMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.Repuesto;
 import com.carcenter.api.repository.RepuestoRepository;
 import com.carcenter.api.service.iService.IRepuestoService;
@@ -27,8 +27,8 @@ public class RepuestoService implements IRepuestoService {
 	private RepuestoRepository repuestoRepository;
 	@Autowired
 	private RepuestoMapper repuestoMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<RepuestoDTO> findAllRepuestos() {

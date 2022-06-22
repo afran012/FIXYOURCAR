@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.TipoIdentificacionDTO;
 import com.carcenter.api.mapper.TipoIdentificacionMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.TipoIdentificacion;
 import com.carcenter.api.repository.TipoIdentificacionRepository;
 import com.carcenter.api.service.iService.ITipoIdentificacionService;
@@ -27,8 +27,8 @@ public class TipoIdentificacionService implements ITipoIdentificacionService {
 	private TipoIdentificacionRepository tipoIdentificacionRepository;
 	@Autowired
 	private TipoIdentificacionMapper tipoIdentificacionMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<TipoIdentificacionDTO> findAllTipoIdentificacions() {

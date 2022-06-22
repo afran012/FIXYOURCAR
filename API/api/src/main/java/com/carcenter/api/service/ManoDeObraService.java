@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.ManoDeObraDTO;
 import com.carcenter.api.mapper.ManoDeObraMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.ManoDeObra;
 import com.carcenter.api.repository.ManoDeObraRepository;
 import com.carcenter.api.service.iService.IManoDeObraService;
@@ -27,8 +27,8 @@ public class ManoDeObraService implements IManoDeObraService {
 	private ManoDeObraRepository manoDeObraRepository;
 	@Autowired
 	private ManoDeObraMapper manoDeObraMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<ManoDeObraDTO> findAllManoDeObras() {

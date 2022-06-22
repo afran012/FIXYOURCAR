@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.FacturaDTO;
 import com.carcenter.api.mapper.FacturaMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.Factura;
 import com.carcenter.api.repository.FacturaRepository;
 import com.carcenter.api.service.iService.IFacturaService;
@@ -26,8 +26,8 @@ public class FacturaService implements IFacturaService {
 	private FacturaRepository facturaRepository;
 	@Autowired
 	private FacturaMapper facturaMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<FacturaDTO> findAllFacturas() {

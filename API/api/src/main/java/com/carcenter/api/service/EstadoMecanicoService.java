@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.EstadoMecanicoDTO;
 import com.carcenter.api.mapper.EstadoMecanicoMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.EstadoMecanico;
 import com.carcenter.api.repository.EstadoMecanicoRepository;
 import com.carcenter.api.service.iService.IEstadoMecanicoService;
@@ -27,8 +27,8 @@ public class EstadoMecanicoService implements IEstadoMecanicoService {
 	private EstadoMecanicoRepository estadoMecanicoRepository;
 	@Autowired
 	private EstadoMecanicoMapper estadoMecanicoMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	//@Autowired
+	//private TipoIdentificacionMapper tipoIdMap;
 
 	@Override
 	public List<EstadoMecanicoDTO> findAllEstadoMecanicos() {

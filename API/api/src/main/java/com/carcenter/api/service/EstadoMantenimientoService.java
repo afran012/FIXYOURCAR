@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.carcenter.api.DTO.EstadoMantenimientoDTO;
 import com.carcenter.api.mapper.EstadoMantenimientoMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.EstadoMantenimiento;
 import com.carcenter.api.repository.EstadoMantenimientoRepository;
 import com.carcenter.api.service.iService.IEstadoMantenimientoService;
@@ -27,8 +27,8 @@ public class EstadoMantenimientoService implements IEstadoMantenimientoService {
 	private EstadoMantenimientoRepository estadoMantenimientoRepository;
 	@Autowired
 	private EstadoMantenimientoMapper estadoMantenimientoMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<EstadoMantenimientoDTO> findAllEstadoMantenimientos() {

@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.PersonaDTO;
 import com.carcenter.api.mapper.PersonaMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.Persona;
 import com.carcenter.api.repository.PersonaRepository;
 import com.carcenter.api.service.iService.IPersonaService;
@@ -26,8 +26,8 @@ public class PersonaService implements IPersonaService {
 	private PersonaRepository personaRepository;
 	@Autowired
 	private PersonaMapper personaMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<PersonaDTO> findAllPersonas() {

@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.RepuestoMantenimientoDTO;
 import com.carcenter.api.mapper.RepuestoMantenimientoMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.RepuestoMantenimiento;
 import com.carcenter.api.repository.RepuestoMantenimientoRepository;
 import com.carcenter.api.service.iService.IRepuestoMantenimientoService;
@@ -27,8 +27,8 @@ public class RepuestoMantenimientoService implements IRepuestoMantenimientoServi
 	private RepuestoMantenimientoRepository repuestoMantenimientoRepository;
 	@Autowired
 	private RepuestoMantenimientoMapper repuestoMantenimientoMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<RepuestoMantenimientoDTO> findAllRepuestoMantenimientos() {

@@ -6,7 +6,7 @@ package com.carcenter.api.service;
 
 import com.carcenter.api.DTO.InventarioDTO;
 import com.carcenter.api.mapper.InventarioMapper;
-import com.carcenter.api.mapper.TipoIdentificacionMapper;
+//import com.carcenter.api.mapper.TipoIdentificacionMapper;
 import com.carcenter.api.model.Inventario;
 import com.carcenter.api.repository.InventarioRepository;
 import com.carcenter.api.service.iService.IInventarioService;
@@ -26,8 +26,8 @@ public class InventarioService implements IInventarioService {
 	private InventarioRepository inventarioRepository;
 	@Autowired
 	private InventarioMapper inventarioMap;
-	@Autowired
-	private TipoIdentificacionMapper tipoIdMap;
+	/*@Autowired
+	private TipoIdentificacionMapper tipoIdMap;*/
 
 	@Override
 	public List<InventarioDTO> findAllInventarios() {
