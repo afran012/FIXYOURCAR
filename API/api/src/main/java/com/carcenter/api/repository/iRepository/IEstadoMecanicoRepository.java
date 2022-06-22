@@ -4,10 +4,14 @@
  */
 package com.carcenter.api.repository.iRepository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.carcenter.api.model.EstadoMecanico;
+
 /**
  *
  * @author stevenfranco
  */
-public interface EstadoMantenimientoIRepository {
+public interface IEstadoMecanicoRepository extends JpaRepository<EstadoMecanico,Long>{
     
 }

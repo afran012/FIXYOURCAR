@@ -4,10 +4,23 @@
  */
 package com.carcenter.api.service.iService;
 
+import java.util.List;
+
+import com.carcenter.api.DTO.RepuestoMantenimientoDTO;
+import com.carcenter.api.model.RepuestoMantenimiento;
+
 /**
  *
  * @author stevenfranco
  */
 public interface IRepuestoMantenimientoService {
-    
+	public List<RepuestoMantenimientoDTO> findAllRepuestoMantenimientos();
+
+	public RepuestoMantenimientoDTO updateRepuestoMantenimiento(RepuestoMantenimientoDTO repuestoMantenimientoDTO,
+			Long id);
+
+	public RepuestoMantenimientoDTO deleteRepuestoMantenimientoById(Long id);
+
+	public RepuestoMantenimiento saveRepuestoMantenimiento(RepuestoMantenimiento repuestoMantenimiento);
+
 }

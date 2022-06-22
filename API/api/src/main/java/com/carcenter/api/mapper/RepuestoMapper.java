@@ -4,10 +4,22 @@
  */
 package com.carcenter.api.mapper;
 
+import java.util.List;
+
+import org.mapstruct.Mapper;
+
+import com.carcenter.api.DTO.RepuestoDTO;
+import com.carcenter.api.model.Repuesto;
+
 /**
  *
  * @author stevenfranco
  */
+@Mapper(componentModel = "spring")
 public interface RepuestoMapper {
+
+    public List<RepuestoDTO> mappAllRepuestosToRepuestosDTOs(List<Repuesto> repuestos);
+
+    public RepuestoDTO mapRepuestoToDTO(Repuesto repuesto);
     
 }

@@ -4,10 +4,14 @@
  */
 package com.carcenter.api.repository.iRepository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.carcenter.api.model.Inventario;
+
 /**
  *
  * @author stevenfranco
  */
-public interface VehiculoIRepository {
+public interface IInventarioRepository extends JpaRepository<Inventario,Long>{
     
 }

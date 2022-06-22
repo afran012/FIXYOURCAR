@@ -4,10 +4,14 @@
  */
 package com.carcenter.api.repository.iRepository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.carcenter.api.model.Mantenimiento;
+
 /**
  *
  * @author stevenfranco
  */
-public interface InventarioIRepository {
+public interface IMantenimientoRepository extends JpaRepository<Mantenimiento,Long>{
     
 }

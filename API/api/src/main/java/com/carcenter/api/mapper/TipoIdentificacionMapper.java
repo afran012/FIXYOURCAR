@@ -4,10 +4,22 @@
  */
 package com.carcenter.api.mapper;
 
+import java.util.List;
+
+import org.mapstruct.Mapper;
+
+import com.carcenter.api.DTO.TipoIdentificacionDTO;
+import com.carcenter.api.model.TipoIdentificacion;
+
 /**
  *
  * @author stevenfranco
  */
+@Mapper(componentModel = "spring")
 public interface TipoIdentificacionMapper {
+
+    public List<TipoIdentificacionDTO> mappAllTipoIdentificacionsToTipoIdentificacionsDTOs(List<TipoIdentificacion> tipoIdentificacions);
+
+    public TipoIdentificacionDTO mapTipoIdentificacionToDTO(TipoIdentificacion tipoIdentificacion);
     
 }

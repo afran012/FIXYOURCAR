@@ -14,6 +14,7 @@ import lombok.Data;
 public class MecanicoDTO {
 
     private Long id;
+    private Long idEstadoMecanico;
     private Long idTipoIdentificacion;
     private String identificacion;
     private String primerNombre;

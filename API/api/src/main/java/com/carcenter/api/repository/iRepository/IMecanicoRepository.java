@@ -4,10 +4,14 @@
  */
 package com.carcenter.api.repository.iRepository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.carcenter.api.model.Mecanico;
+
 /**
  *
  * @author stevenfranco
  */
-public interface TipoIdentificacionIRepository {
+public interface IMecanicoRepository extends JpaRepository<Mecanico,Long>{
     
 }

@@ -4,10 +4,22 @@
  */
 package com.carcenter.api.service.iService;
 
+import java.util.List;
+
+import com.carcenter.api.DTO.MecanicoDTO;
+import com.carcenter.api.model.Mecanico;
+
 /**
  *
  * @author stevenfranco
  */
 public interface IMecanicoService {
-    
+	public List<MecanicoDTO> findAllMecanicos();
+
+	public MecanicoDTO updateMecanico(MecanicoDTO mecanicoDTO, Long id);
+
+	public MecanicoDTO deleteMecanicoById(Long id);
+
+	public Mecanico saveMecanico(Mecanico mecanico);
+
 }

@@ -4,10 +4,22 @@
  */
 package com.carcenter.api.service.iService;
 
+import java.util.List;
+
+import com.carcenter.api.DTO.InventarioDTO;
+import com.carcenter.api.model.Inventario;
+
 /**
  *
  * @author stevenfranco
  */
 public interface IInventarioService {
-    
+	public List<InventarioDTO> findAllInventarios();
+
+	public InventarioDTO updateInventario(InventarioDTO inventarioDTO, Long id);
+
+	public InventarioDTO deleteInventarioById(Long id);
+
+	public Inventario saveInventario(Inventario inventario);
+
 }

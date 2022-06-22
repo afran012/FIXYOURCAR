@@ -4,10 +4,22 @@
  */
 package com.carcenter.api.mapper;
 
+import java.util.List;
+
+import org.mapstruct.Mapper;
+
+import com.carcenter.api.DTO.InventarioDTO;
+import com.carcenter.api.model.Inventario;
+
 /**
  *
  * @author stevenfranco
  */
+@Mapper(componentModel = "spring")
 public interface InventarioMapper {
-    
+
+    public List<InventarioDTO> mappAllInventariosToInventariosDTOs(List<Inventario> inventarios);
+
+    public InventarioDTO mapInventarioToDTO(Inventario inventario);
+
 }

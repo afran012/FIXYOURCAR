@@ -4,10 +4,14 @@
  */
 package com.carcenter.api.repository.iRepository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.carcenter.api.model.Persona;
+
 /**
  *
  * @author stevenfranco
  */
-public interface PersonaIRepository {
+public interface IPersonaRepository extends JpaRepository<Persona,Long>{
     
 }

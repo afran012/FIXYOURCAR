@@ -4,10 +4,14 @@
  */
 package com.carcenter.api.repository.iRepository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.carcenter.api.model.Factura;
+
 /**
  *
  * @author stevenfranco
  */
-public interface ManoDeObraIRepository {
+public interface IFacturaRepository extends JpaRepository<Factura,Long>{
     
 }
