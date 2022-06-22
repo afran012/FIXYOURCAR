@@ -23,4 +23,68 @@ public class MantenimientoDTO {
     private String descripcion;
     private Date fecha;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getIdFactura() {
+        return idFactura;
+    }
+
+    public void setIdFactura(Long idFactura) {
+        this.idFactura = idFactura;
+    }
+
+    public Long getIdEstadoMantenimiento() {
+        return idEstadoMantenimiento;
+    }
+
+    public void setIdEstadoMantenimiento(Long idEstadoMantenimiento) {
+        this.idEstadoMantenimiento = idEstadoMantenimiento;
+    }
+
+    public Long getIdVehiculo() {
+        return idVehiculo;
+    }
+
+    public void setIdVehiculo(Long idVehiculo) {
+        this.idVehiculo = idVehiculo;
+    }
+
+    public Long getIdVecanico() {
+        return idVecanico;
+    }
+
+    public void setIdVecanico(Long idVecanico) {
+        this.idVecanico = idVecanico;
+    }
+
+    public Long getIdManoDeObra() {
+        return idManoDeObra;
+    }
+
+    public void setIdManoDeObra(Long idManoDeObra) {
+        this.idManoDeObra = idManoDeObra;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
 }

@@ -30,5 +30,29 @@ public class RepuestoMantenimiento {
 	private Long idRepuesto;
 	@Column(name="ID_MANTENIMIENTO")
 	private Long idMantenimiento;
+        
+        public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getIdRepuesto() {
+        return idRepuesto;
+    }
+
+    public void setIdRepuesto(Long idRepuesto) {
+        this.idRepuesto = idRepuesto;
+    }
+
+    public Long getIdMantenimiento() {
+        return idMantenimiento;
+    }
+
+    public void setIdMantenimiento(Long idMantenimiento) {
+        this.idMantenimiento = idMantenimiento;
+    }
     
 }

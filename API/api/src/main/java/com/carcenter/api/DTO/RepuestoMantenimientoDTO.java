@@ -14,7 +14,31 @@ import lombok.Data;
 public class RepuestoMantenimientoDTO {
 
     private Long id;
-	private Long idRepuesto;
-	private Long idMantenimiento;
-    
+    private Long idRepuesto;
+    private Long idMantenimiento;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getIdRepuesto() {
+        return idRepuesto;
+    }
+
+    public void setIdRepuesto(Long idRepuesto) {
+        this.idRepuesto = idRepuesto;
+    }
+
+    public Long getIdMantenimiento() {
+        return idMantenimiento;
+    }
+
+    public void setIdMantenimiento(Long idMantenimiento) {
+        this.idMantenimiento = idMantenimiento;
+    }
+
 }

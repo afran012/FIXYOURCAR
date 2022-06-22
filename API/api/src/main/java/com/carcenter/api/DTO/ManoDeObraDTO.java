@@ -20,4 +20,52 @@ public class ManoDeObraDTO {
     private Long precioMinimo;
     private Long precioTotal;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getServicio() {
+        return servicio;
+    }
+
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Long getPrecioMaximo() {
+        return precioMaximo;
+    }
+
+    public void setPrecioMaximo(Long precioMaximo) {
+        this.precioMaximo = precioMaximo;
+    }
+
+    public Long getPrecioMinimo() {
+        return precioMinimo;
+    }
+
+    public void setPrecioMinimo(Long precioMinimo) {
+        this.precioMinimo = precioMinimo;
+    }
+
+    public Long getPrecioTotal() {
+        return precioTotal;
+    }
+
+    public void setPrecioTotal(Long precioTotal) {
+        this.precioTotal = precioTotal;
+    }
+
 }
