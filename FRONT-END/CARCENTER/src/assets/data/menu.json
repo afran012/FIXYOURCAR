@@ -1,10 +1,10 @@
 [
     {
-        "name": "Dashboard",
+        "name": "Ingresa Vehículo",
         "redirect": "/dashboard"
     },
     {
-        "name": "Users",
+        "name": "Facturas",
         "redirect": "/dashboard/users"
     },
     {

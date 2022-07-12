@@ -7,12 +7,14 @@ import { EstadoMantenimiento } from 'src/app/interfaces/estado-mantenimiento';
 import { Factura } from 'src/app/interfaces/factura';
 import { ManoDeObra } from 'src/app/interfaces/mano-de-obra';
 import { Mantenimiento } from 'src/app/interfaces/mantenimiento';
+import { Mecanico } from 'src/app/interfaces/mecanico';
 import { Persona } from 'src/app/interfaces/persona';
 import { Vehiculo } from 'src/app/interfaces/vehiculo';
-import { EstadoEstadoMantenimientoService } from 'src/app/services/estado-mantenimiento.service';
+import { EstadoMantenimientoService } from 'src/app/services/estado-mantenimiento.service';
 import { FacturaService } from 'src/app/services/facturas.service';
 import { ManoDeObraService } from 'src/app/services/mano-de-obra.service';
 import { MantenimientoService } from 'src/app/services/mantenimiento.service';
+import { MecanicoService } from 'src/app/services/mecanico.service';
 import { PersonaService } from 'src/app/services/personas.service';
 import { VehiculosService } from 'src/app/services/vehiculos.service';
 
@@ -29,6 +31,7 @@ export class MantenimientoComponent implements OnInit {
   mantenimientos: Mantenimiento[] = [];
   estadoMantenimientos: EstadoMantenimiento[] = [];
   manoDeObras: ManoDeObra[] = [];
+  mecanicos: Mecanico[] = [];
   form: FormGroup;
   loading = false;
 
@@ -39,9 +42,10 @@ export class MantenimientoComponent implements OnInit {
     private personasService: PersonaService,
     private vehiculosService: VehiculosService,
     private mantenimientoService: MantenimientoService,
-    private estadoMantenimientoService: EstadoEstadoMantenimientoService,
+    private estadoMantenimientoService: EstadoMantenimientoService,
     private manoDeObraServiceService: ManoDeObraService,
     private facturaService: FacturaService,
+    private mecanicoService: MecanicoService,
 
   ) {
     this.form = this.fb.group({
@@ -50,7 +54,8 @@ export class MantenimientoComponent implements OnInit {
       idVehiculo: ['', Validators.required],
       idManoDeObra: ['', Validators.required],
       descripcion: ['', Validators.required],
-      fecha: ['', Validators.required]
+      fecha: ['', Validators.required],
+      idMecanico: ['', Validators.required]
     })
   }
 
@@ -161,7 +166,7 @@ export class MantenimientoComponent implements OnInit {
         }
       });
 
-      this.estadoMantenimientoService.getAllEstadoMantenimiento()
+    this.estadoMantenimientoService.getAllEstadoMantenimiento()
       .subscribe(estadoMantenimiento => {
 
         try {
@@ -173,7 +178,7 @@ export class MantenimientoComponent implements OnInit {
         }
       });
 
-      this.manoDeObraServiceService.getAllManoDeObra()
+    this.manoDeObraServiceService.getAllManoDeObra()
       .subscribe(manoDeObra => {
 
         try {
@@ -185,11 +190,23 @@ export class MantenimientoComponent implements OnInit {
         }
       });
 
-      this.facturaService.getAllFactura()
+    this.facturaService.getAllFactura()
       .subscribe(facturas => {
 
         try {
           this.facturas = facturas;
+
+
+        } catch (error) {
+          console.log(error);
+        }
+      });
+
+      this.mecanicoService.getAllMecanico()
+      .subscribe(mecanico => {
+
+        try {
+          this.mecanicos = mecanico;
 
 
         } catch (error) {

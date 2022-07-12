@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@CrossOrigin(origins= {"*"})
+@CrossOrigin(origins = {"*"})
 @RequestMapping("api/EstadoMecanico")
 public class EstadoMecanicoController {
     

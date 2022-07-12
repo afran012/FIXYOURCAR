@@ -28,6 +28,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
+import { MaterialFileInputModule } from 'ngx-material-file-input';
 
 
 
@@ -57,6 +58,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatMenuModule,
     MatGridListModule,
     MatSelectModule,
+    MaterialFileInputModule,
     
   ],
   exports: [
@@ -82,7 +84,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatListModule,
     MatMenuModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
+    MaterialFileInputModule,
   ]
 })
 export class SharedModule { }

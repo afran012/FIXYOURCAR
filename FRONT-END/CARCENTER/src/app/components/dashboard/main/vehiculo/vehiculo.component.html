@@ -7,6 +7,14 @@
             <img src="../../../assets/img/diagnostico.png" class="img-user" alt="">
             <h1>Vehículo</h1>
 
+            <mat-form-field class="user-label-file" appearance="fill" color="accent">
+                <mat-label>Imagen</mat-label>
+                <ngx-mat-file-input matInput autocomplete="off" formControlName="file">
+                </ngx-mat-file-input>
+                <!-- <input type="file" matInput autocomplete="off" formControlName="file"> -->
+            </mat-form-field>
+            <button class="upload-btn" type="button" mat-raised-button color="accent" (click)="$event.stopPropagation()" (click)="fileUpload()">Subir</button>
+
             <mat-form-field class="user-label" appearance="fill" color="accent">
                 <mat-label>Persona</mat-label>
                 <mat-select formControlName="idPersona">
@@ -28,7 +36,8 @@
             </mat-form-field>
 
             <br>
-            <button type="submit" class="login-btn" mat-raised-button color="accent" [disabled]="form.invalid">Mantenimiento</button>
+            <button type="submit" class="login-btn" mat-raised-button color="accent"
+                [disabled]="form.invalid">Mantenimiento</button>
         </form>
     </section>
 </body>

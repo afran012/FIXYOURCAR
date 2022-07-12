@@ -4,6 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Persona } from 'src/app/interfaces/persona';
 import { Vehiculo } from 'src/app/interfaces/vehiculo';
+import { FileUploadService } from 'src/app/services/file-upload.service';
 import { PersonaService } from 'src/app/services/personas.service';
 import { VehiculosService } from 'src/app/services/vehiculos.service';
 
@@ -16,17 +17,26 @@ export class VehiculoComponent implements OnInit {
 
   personas: Persona[] = [];
   vehiculos: Vehiculo[] = [];
+  fileUp: String[] = [];
 
   selected = 'option2';
   form: FormGroup;
   loading = false;
   constructor(
-    private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router, private personasService: PersonaService, private vehiculosService: VehiculosService
+    private fb: FormBuilder,
+    private _snackBar: MatSnackBar,
+    private router: Router,
+    private personasService: PersonaService,
+    private vehiculosService: VehiculosService
+    ,
+    private fileUploadService: FileUploadService
   ) {
     this.form = this.fb.group({
       idPersona: ['', Validators.required],
       placas: ['', Validators.required],
       marca: ['', Validators.required]
+      ,
+      file: ['', Validators.required]
     })
   }
 
@@ -54,24 +64,24 @@ export class VehiculoComponent implements OnInit {
 
   ingresar() {
 
-
+    this.fileUpload();
     const idPersona = this.form.value.idPersona;
     const placas = this.form.value.placas;
     const marca = this.form.value.marca;
     this.vehiculosService.getAllVehiculo()
-    .subscribe(vehiculos => {
+      .subscribe(vehiculos => {
 
-      try {
-        this.vehiculos = vehiculos;
-        const vehiculoFind = vehiculos.filter(
-          vehiculo => {
-            return vehiculo.placas == placas
-          })
+        try {
+          this.vehiculos = vehiculos;
+          const vehiculoFind = vehiculos.filter(
+            vehiculo => {
+              return vehiculo.placas == placas
+            })
           console.log(vehiculoFind);
-          
+
           if (vehiculoFind.length == 0) {
             this.fakeLoading()
-            this.vehiculosService.createVehiculo({idPersona,placas,marca}).subscribe(
+            this.vehiculosService.createVehiculo({ idPersona, placas, marca }).subscribe(
               //this.fakeLoading()
             )
           }
@@ -81,10 +91,10 @@ export class VehiculoComponent implements OnInit {
             this.form.reset()
           }
 
-      } catch (error) {
-        console.log(error);
-      }
-    });
+        } catch (error) {
+          console.log(error);
+        }
+      });
   }
 
   error() {
@@ -107,6 +117,20 @@ export class VehiculoComponent implements OnInit {
 
           console.log(this.personas);
 
+        } catch (error) {
+          console.log(error);
+        }
+      });
+  }
+
+  fileUpload() {
+    // e.preventDefault();
+    console.log(this.form.value.file.files[0]);
+
+    this.fileUploadService.FileUpload(this.form.value.file.files[0])
+      .subscribe(file => {
+        try {
+          console.log(file);
         } catch (error) {
           console.log(error);
         }

@@ -17,6 +17,15 @@
             </mat-form-field>
 
             <mat-form-field class="user-label" appearance="fill" color="accent">
+                <mat-label>Mecanico</mat-label>
+                <mat-select formControlName="idMecanico">
+                    <mat-option *ngFor="let mecanico of mecanicos" [value]="mecanico.id">
+                        {{mecanico.primerNombre}}{{mecanico.primerApellido}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="user-label" appearance="fill" color="accent">
                 <mat-label>idEstadoMantenimiento</mat-label>
                 <mat-select formControlName="idEstadoMantenimiento">
                     <mat-option *ngFor="let estadoMantenimiento of estadoMantenimientos" [value]="estadoMantenimiento.id">

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class EstadoEstadoMantenimientoService {
+export class EstadoMantenimientoService {
   private api = 'http://localhost:8082/api'
 
   constructor(

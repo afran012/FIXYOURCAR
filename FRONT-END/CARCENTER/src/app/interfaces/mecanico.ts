@@ -1,5 +1,6 @@
-export interface Persona {
+export interface Mecanico {
     id?: number,
+    idEstadoMecanico?:number,
     idTipoIdentificacion?: number,
     identificacion?: string,
     primerNombre?: string,
